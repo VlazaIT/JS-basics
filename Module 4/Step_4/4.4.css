@@ -1,0 +1,74 @@
+html, body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    background-image: url("img.png");
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.page-header {
+    background-color: ghostwhite;
+}
+
+h1 {
+    margin: 0;
+    font-size: xx-large;
+    padding: 1rem 2rem 1rem 4rem;
+    display: inline-block;
+}
+
+
+label {
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-size: large;
+}
+
+input {
+    font-family: 'Merriweather', serif;
+    display: inline-block;
+    margin: 0;
+    font-size: medium;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+button {
+    font-family: 'Merriweather', serif;
+    border-radius: 10px;
+    background-color: darkgrey;
+    font-size: medium;
+    padding: 0.3rem;
+}
+
+button:hover {
+    background-color: #c5c5c5;
+}
+
+article {
+    margin: 1rem 4rem 1rem 4rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px #de8787 solid;
+    border-radius: 10px;
+}
+
+h2 {
+
+    margin-top: 0;
+    display: block;
+}
+
+p {
+    display: block;
+    text-align: justify;
+    line-height: 2;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #a98469;
+}
