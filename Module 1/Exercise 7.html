@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 7</title>
+</head>
+<body>
+<h1>Dice rolls 🎲</h1>
+<p id="target"></p>
+<p id="target1"></p>
+<script>
+    'use strict';
+    let dice_number, dice_sum=0, result;
+    dice_number = parseInt(prompt('Enter the number of dice you want to roll:'));
+    document.querySelector('#target').innerHTML = 'You want to roll ' + dice_number + ' dice';
+    for (let i=1; i <= dice_number; i++) {
+      result = Math.floor(Math.random()*6)+1;
+      console.log('Dice #'+ i + ' result: ' + result);
+      dice_sum = dice_sum + result;
+      console.log('Sum: ' + dice_sum);
+    }
+    document.querySelector('#target1').innerHTML = 'The sum of the dice: ' + dice_sum;
+
+</script>
+</body>
+</html>

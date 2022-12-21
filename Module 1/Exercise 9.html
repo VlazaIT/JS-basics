@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 9</title>
+</head>
+<body>
+<h1>Prime number check</h1>
+<ul id="target0"></ul>
+<ul id="target1"></ul>
+<ul id="target2"></ul>
+<ul id="target3"></ul>
+<script>
+    'use strict';
+    let number = parseInt(prompt("Enter an integer number: "));
+    let isPrime = true;
+    while (number < 0) {
+        number = parseInt(prompt('Please enter a valid positive number:'));
+    }
+    if ((number === 1) || (number === 0)) {
+        document.querySelector('#target0').innerHTML = number + ' is not a prime number';
+    }
+    else if (number > 1) {
+        for (let i = 2; i < number; i++) {
+            if (number % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            document.querySelector('#target1').innerHTML = number + ' is a prime number';
+        }
+        else {
+            document.querySelector('#target2').innerHTML = number + ' is not a prime number';
+        }
+    }
+
+</script>
+
+</body>
+</html>

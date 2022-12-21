@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 6</title>
+</head>
+<body>
+<h1> Square root calculation</h1>
+<p id="target0"></p>
+<p id="target1"></p>
+<p id="target2"></p>
+<script>
+    'use strict';
+    let answer, number, result;
+    answer = confirm('Should I calculate the square root?');
+    if (answer == true) {
+      number = parseInt(prompt('Enter a number:'));
+      if (number < 0) {
+        document.querySelector('#target1').innerHTML = 'The square root of a negative number is not defined';
+      }
+      else {
+        result = Math.sqrt(number);
+        document.querySelector('#target2').innerHTML = 'The square root of ' + number + ' is ' + result.toFixed(2);
+      }
+    }
+    else {
+      document.querySelector('#target0').innerHTML = 'The square root is not calculated';
+    }
+</script>
+</body>
+</html>

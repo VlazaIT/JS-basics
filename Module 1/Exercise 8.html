@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 8</title>
+</head>
+<body>
+<h1>Leap years within the given range</h1>
+<ul id="target"></ul>
+<script>
+    'use strict';
+    let first_year, end_year, years = [];
+    first_year = parseInt(prompt('Enter the start year:'));
+    end_year = parseInt(prompt(' Enter the end year:'));
+    for (let i=first_year; i <= end_year; i++) {
+      if ((i % 4 == 0) && (i % 100 != 0) || (i % 400 == 0)) {
+        years.push(i);
+      }
+    }
+    document.querySelector('#target').innerHTML = 'Leap years between ' + first_year + ' and ' + end_year + ' are:';
+
+    let ul = document.createElement('ul');
+    document.body.appendChild(ul);
+
+    for (let n of years) {
+      let li = document.createElement('li');
+      li.innerText = n;
+      ul.append(li);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5</title>
+</head>
+<body>
+<h1>Is it a leap year?</h1>
+<p id="target0"></p>
+<p id="target1"></p>
+<script>
+    'use strict';
+    let year_given;
+    year_given = parseInt(prompt('Enter a year:'));
+    if ((0 == year_given % 4) && (0 != year_given % 100) || (0 == year_given % 400)) {
+      document.querySelector('#target0').innerHTML = year_given + ' is a leap year';
+    }
+    else {
+      document.querySelector('#target1').innerHTML = year_given + ' is not a leap year';
+    }
+</script>
+</body>
+</html>

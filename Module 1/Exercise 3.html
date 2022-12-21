@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 3</title>
+</head>
+<body>
+<h1>Sum, product and average function results</h1>
+<p id="target1"></p>
+<p id="target2"></p>
+<p id="target3"></p>
+<script>
+    'use strict';
+    const num1 = parseInt(prompt('Enter the first number:'));
+    const num2 = parseInt(prompt('Enter the second number:'));
+    const num3 = parseInt(prompt('Enter the third number:'));
+    const sum = num1+num2+num3;
+    const product = num1*num2*num3;
+    const average = (num1+num2+num3)/3;
+    document.querySelector('#target1').innerHTML = 'The sum of the numbers is: ' + sum ;
+    document.querySelector('#target2').innerHTML = 'The product of the numbers is: ' + product;
+    document.querySelector('#target3').innerHTML = 'The average of the numbers is: ' + average.toFixed(2);
+</script>
+</body>
+</html>

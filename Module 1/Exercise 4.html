@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+<h1>Hogwarts School of Witchcraft and Wizardry 🧙</h1>
+<p id="target0"></p>
+<p id="target1"></p>
+<p id="target2"></p>
+<p id="target3"></p>
+<script>
+    'use strict';
+    let name, class_selection
+    name = prompt('Enter your name:')
+    class_selection = Math.floor(Math.random() * 4) + 1
+    if (class_selection == 1) {
+      document.querySelector('#target0').innerHTML = name +', you are Gryffindor' ;
+    }
+    else if (class_selection == 2) {
+      document.querySelector('#target1').innerHTML = name +', you are Slytherin' ;
+    }
+    else if (class_selection == 3) {
+      document.querySelector('#target2').innerHTML = name +', you are Hufflepuff' ;
+    }
+    else {
+      document.querySelector('#target3').innerHTML = name +', you are Ravenclaw' ;
+    }
+</script>
+</body>
+</html>
