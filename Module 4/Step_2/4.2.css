@@ -8,9 +8,6 @@ h1 {
     font-size: xx-large;
 }
 
-h2 {
-    font-size: large;
-}
 
 label {
     display: block;
@@ -32,8 +29,14 @@ button {
     background-color: darkgrey;
     border: none;
     padding: 0.5rem 3.5rem 0.5rem 3.5rem;
+    margin-bottom: 1rem;
 }
 
 button:hover {
     background-color: #c5c5c5;
+}
+
+p {
+    text-align: justify;
+    line-height: 2;
 }
