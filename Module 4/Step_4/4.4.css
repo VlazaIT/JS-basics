@@ -11,6 +11,8 @@ html, body {
 
 .page-header {
     background-color: ghostwhite;
+    background-image: url("img_1.png");
+    width: 100%;
 }
 
 h1 {
@@ -32,6 +34,7 @@ input {
     display: inline-block;
     margin: 0;
     font-size: medium;
+    background-color: #fcebd1;
     padding: 0.3rem;
     border-radius: 10px;
 }
@@ -39,13 +42,13 @@ input {
 button {
     font-family: 'Merriweather', serif;
     border-radius: 10px;
-    background-color: darkgrey;
+    background-color: #fcebd1;
     font-size: medium;
     padding: 0.3rem;
 }
 
 button:hover {
-    background-color: #c5c5c5;
+    background-color: #f6c6af;
 }
 
 article {
